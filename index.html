@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:@400;700&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <div class="cabezera">
+            <img class="logo_alura" src="./imagenes/Logo.png" alt="Logo de Alura">
+        </div>
+    </header>
+    <main>
+        <div class="contenido">
+            <div class="contenido-izquierda">
+                <textarea cols="10" rows="15" id="ingresoTexto" class="ingreso-texto" placeholder="Ingrese el texto aquí"></textarea>
+                <div class="contenido-izquierda-abajo">
+                    <img src="./imagenes/exclamacion.png" alt="Imagen de exclamacion">
+                    <p class="advertencia">Solo letras minúsculas y sin acentos</p>
+                    <div class="botones-izquierda">
+                        <button onclick="encriptar();" class="btn-encriptar">Encriptar</button>
+                        <button onclick="desencriptar();"  class="btn-desencriptar">Desencriptar</button>
+                    </div>
+                </div>   
+            </div>
+            <div id="ajusteContenido" class="contenido-derecha">
+                <img id="imgDer" class="muneco" src="./imagenes/Muñeco.png" alt="Imagen del muñeco">
+                <p id="mensajeAdv" class="mensaje">Ningún mensaje fue encontrado</p>
+                <textarea cols="10" rows="10" id="txtInfo" class="texto-info" readonly>Ingresa el texto que desees encriptar o desencriptar</textarea>
+                <button onclick="copiar();" id="botonCopiar" class="btn-copiar oculto">Copiar</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="redes-sociales">
+                <a href="https://www.linkedin.com/in/miguel-mq-dv/" target="_blank" class="img-footer"><img src="./imagenes/linkedin.png" alt="LinkedIn"></a>
+                <a href="https://github.com/Manafune" target="_blank" class="img-footer"><img src="./imagenes/github.png" alt="GitHub"></a>
+            </div>
+           
+        </div>
+    </footer>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
